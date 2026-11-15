@@ -1,13 +1,21 @@
 {
   "name": "my-first-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create and host a simple Node.js server that returns a basic HTML page.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-Zhg/my-first-server.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Brian-Zhg/my-first-server/issues"
+  },
+  "homepage": "https://github.com/Brian-Zhg/my-first-server#readme"
 }

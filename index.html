@@ -1,18 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Server</title>
+
     <style>
-        /* Your CSS goes here */
+        @font-face {
+            font-family: "tgFont";
+            src: url("./Rapunled.otf") format("opentype");
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px 20px;
+            background-color: #f5eee3;
+            color: #493426;
+            font-family: Georgia, serif;
+            line-height: 1.8;
+        }
+
+        #header {
+            text-align: center;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            font-family: "tgFont", Georgia, serif;
+            font-size: 3.5rem;
+            color: #9b4b27;
+            margin-bottom: 25px;
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            max-width: 750px;
+            margin: 25px auto;
+            font-size: 1.1rem;
+        }
+
+        p:last-of-type {
+            text-align: center;
+            font-weight: bold;
+            color: #9b4b27;
+            margin-top: 40px;
+        }
+
+        #sad {
+            text-align: center;
+            font-weight: 900;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            body {
+                padding: 25px 16px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
+
 </head>
+
 <body>
     <!-- Your HTML goes here -->
-    
+    <div id="header">
+        <h1>Thanksgiving Traditions</h1>
+        <iframe src="https://giphy.com/embed/LmaHpwtaRL7XUB8doF" width="480" height="353" style="" frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    <p>Thanksgiving holds a very special place in my heart. As both NYC public schools, and CUNY have deemed turkey day
+        a holiday worthy of not 1 day off but 2 spectacular days off. Outside of the much-needed break that this
+        beautiful holiday provides, it's also a time that reminds me to be grateful for the things that often go
+        unnoticed amidst the monotony of everyday life. Both family and friends alike as well as simply being able to
+        experience life in general. Aside from the mushy gushy that comes with appreciating loved ones, Thanksgiving is
+        one of the few holidays commercial retail stores have deemed worthy of marking down, their previously marked up
+        products,
+        selling them at a jaw-dropping 15% off on black friday. </p>
+
+    <p id="sad">Oh how far black friday has fallen.</p>
+    <iframe src="https://giphy.com/embed/43OKja0fROZxpFoQeg" width="480" height="269" style="" frameBorder="0"
+        class="giphy-embed" allowFullScreen></iframe>
+    <p>All in all, I don't even eat turkey, so this holiday is really just a precusor to Christmas !</p>
+
+    <p>Have a happy and safe holday !</p>
     <script>
         // Your javascript code (optional)
     </script>
 </body>
+
 </html>
