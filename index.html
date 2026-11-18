@@ -1,18 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Server</title>
+    <title>Holiday Traditions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Your CSS goes here */
+        body {
+            
+            background-color: #d6e0f5;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            top: 3rem;
+            position: relative;
+            font-family: 'Cabin Sketch', cursive;
+            font-size: 3rem;
+            color: #110c6c;
+
+        }
+
+        .card {
+            width: 300px;
+            height: 350px;
+            margin: 9rem auto;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+        }
+
+        .card-front {
+            background: white;
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-back {
+            background: #bf3030;
+            color: white;
+            transform: rotateY(180deg);
+            font-family: 'Nunito', sans-serif;
+            font-size: 27px;
+            padding: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Your HTML goes here -->
-    
+    <h1>New Year's Eve Traditions</h1>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="images/grapes.jpg" alt="Twelve grapes">
+                </div>
+                <div class="card-back">
+                    Eating twelve grapes for each month for good luck
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="images/monigote.jpg" alt="Old year doll">
+                </div>
+                <div class="card-back">
+                    Burn año viejo (old year) dolls stuffed with paper to leave behind the bad things from the past year
+                    and welcome a fresh start.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="images/lentils.jpg" alt="Lentils">
+                </div>
+                <div class="card-back">
+                    Eating lentils to attract prosperity and good fortune for the new year.
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Your javascript code (optional)
     </script>
 </body>
+
 </html>
