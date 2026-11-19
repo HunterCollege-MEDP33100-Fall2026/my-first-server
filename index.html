@@ -3,16 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>My First Server</title>
     <style>
         /* Your CSS goes here */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: #ffe9ff;
+            color: #423bff;
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            margin: 40px 20px 10px;
+            font-size: 2.6rem;
+            color: #ff12d0;
+            font-family: "Barrio", cursive;
+        }
+
+        p {
+            max-width: 480px;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        #pinata {
+            width: 260px;
+            margin: 30px 0 10px;
+            cursor: pointer;
+        }
+
+        .shake {
+            animation: shake 0.6s;
+        }
+
+        @keyframes shake {
+            0%   { transform: rotate(0deg); }
+            15%  { transform: rotate(-14deg); }
+            30%  { transform: rotate(12deg); }
+            45%  { transform: rotate(-10deg); }
+            60%  { transform: rotate(8deg); }
+            75%  { transform: rotate(-4deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .hint {
+            color: #423bff;
+            font-style: "Poppins", sans-serif;
+        }
+
+        footer {
+            margin: 30px 0;
+            color: #9000ff;
+            font-size: 1.3rem;
+            font-family: "Barrio", cursive;
+        }
     </style>
 </head>
 <body>
-    <!-- Your HTML goes here -->
-    
+   <body>
+    <h1>Piñatas on Christmas</h1>
+    <p>
+        Every Christmas, my family makes a piñata and fill it with candy and money. 
+        Last year, we made two and we made memorable memories.
+    </p>
+
+    <img id="pinata" src="/pinata.png" alt="A colorful piñata">
+    <p class="hint">Click the piñata to give it a shake!</p>
+
+    <footer>¡Feliz Navidad!</footer>
+
     <script>
-        // Your javascript code (optional)
+        const pinata = document.getElementById("pinata");
+
+        pinata.addEventListener("click", () => {
+            pinata.classList.remove("shake");
+            void pinata.offsetWidth;
+            pinata.classList.add("shake");
+        });
     </script>
-</body>
+  </body>
 </html>
+
+
