@@ -1,18 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Server</title>
-    <style>
-        /* Your CSS goes here */
-    </style>
-</head>
-<body>
-    <!-- Your HTML goes here -->
-    
-    <script>
-        // Your javascript code (optional)
-    </script>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>My First Server</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap"
+         rel="stylesheet" />
+      <style>
+         * {
+            font-family: "Short Stack", cursive;
+            background-color: rgb(255, 192, 203);
+         }
+         h1 {
+            text-align: center;
+            font-size: 45px;
+            padding: 1%;
+            margin: 0;
+         }
+         .img-container {
+            display: flex;
+         }
+         .chiikawa-container {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+         }
+         .img-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+         .img-text-container p {
+            font-size: 25px;
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Chiikawa</h1>
+      <div class="img-text-container">
+         <p>
+            Chiikawa is a popular Japanese web manga created by illustrator Nogano. The
+            name "Chiikawa" is abbrievated from Japanese and translates to "small and cute
+            creature", perfectly capturing the essence of the characters in the franchise.
+         </p>
+         <p>Below is the main trio of the series:</p>
+         <div class="img-container">
+            <div class="chiikawa-container">
+               <img
+                  src="https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/fd996c1c-d3d0-401a-8000-505f6d6dc1e7/characters+Hachiware+phonetic+and+name+copy.png?format=750w" />
+               <img
+                  src="https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/7828ba38-8302-4215-b4e9-2873c2a27ecc/characters+chiikawa+phonetic+and+name+copy.png?format=1000w" />
+               <img
+                  src="https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/5e8cf75b-774f-49b6-9765-2c3bd74f0443/characters+USAGI+phonetic+and+name+copy.png?format=750w" />
+            </div>
+         </div>
+      </div>
+      <script>
+         // Your javascript code (optional)
+      </script>
+   </body>
 </html>
